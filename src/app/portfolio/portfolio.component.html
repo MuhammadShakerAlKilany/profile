@@ -1,0 +1,10 @@
+<div class="d-flex flex-row">
+
+    <h3 class="h1">portfolio </h3>
+    <div class="container ">
+    <div class="row">
+    
+        <span *ngFor="let pro of arryPortfolio; index as i" class="col-4" [ngClass]="i%2==0? 'bg-secondary':'bg-light'"><div class="h-100 w-100"><span >{{pro}}</span></div></span>
+    </div>
+    </div>
+</div>

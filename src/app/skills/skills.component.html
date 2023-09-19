@@ -1,0 +1,24 @@
+<div class="skills text-light  " >
+<div class="container">
+    <h3 class="text-center h1">skills</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae explicabo at voluptate magnam qui ad, saepe quis excepturi incidunt nisi, eius eligendi architecto iure illo. Blanditiis fugiat pariatur quam.</p>
+<div class="d-flex flex-row justify-content-around">
+<div>
+
+    <div class=" border-bottom border-light ">My focas</div>
+    <div *ngFor="let focas of arryFocas">{{focas}}</div>
+</div>
+    <div class="w-75">
+
+        <div class="d-flex flex-row" *ngFor="let skil of arrSkills">
+            <span class="bg-secondary ps-1 h4" style="height: 2rem;">{{skil.name}}</span>
+            <span class="progress w-100 rounded-0 " style="height: 2rem;" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar  bg-secondary" [style.width]="skil.value"></div></span>
+        </div>
+        
+        
+    </div>
+</div>
+</div>
+    
+</div>
